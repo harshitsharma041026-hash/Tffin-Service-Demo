@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Premium Tiffin Service</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+body {
+    margin:0;
+    font-family:'Poppins',sans-serif;
+    background:#f9f9f9;
+}
+header {
+    background:linear-gradient(135deg,#ff6600,#ff8533);
+    color:white;
+    text-align:center;
+    padding:40px 20px;
+}
+nav {
+    display:flex;
+    justify-content:center;
+    background:#222;
+}
+nav a {
+    color:white;
+    padding:15px 20px;
+    text-decoration:none;
+}
+nav a:hover {background:#ff6600;}
+.hero {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    height:80vh;
+    color:white;
+    background:url('https://images.unsplash.com/photo-1604908176997-4316a0e69d2c') center/cover;
+    text-align:center;
+}
+.hero h1 {font-size:40px;}
+.hero button {
+    margin-top:20px;
+    padding:15px 30px;
+    background:#25D366;
+    border:none;
+    color:white;
+    font-size:18px;
+    border-radius:30px;
+    cursor:pointer;
+}
+.section {
+    padding:60px 20px;
+    text-align:center;
+}
+.cards {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+}
+.card {
+    background:white;
+    padding:20px;
+    width:280px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+.gallery img {
+    width:300px;
+    border-radius:15px;
+}
+.pricing {
+    background:#fff3e6;
+}
+.price-box {
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    width:260px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+footer {
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:15px;
+}
+.whatsapp {
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#25D366;
+    color:white;
+    padding:15px;
+    border-radius:50%;
+    font-size:22px;
+}
+</style>
+</head>
+<body>
+
+<header>
+<h1>Sharma Premium Tiffin</h1>
+<p>Healthy • Fresh • Homemade</p>
+</header>
+
+<nav>
+<a href="#">Home</a>
+<a href="#">Menu</a>
+<a href="#">Plans</a>
+<a href="#">Contact</a>
+</nav>
+
+<section class="hero">
+<h1>Delicious Home Food Delivered Daily</h1>
+<p>Trusted by 500+ customers</p>
+<button onclick="orderNow()">Order on WhatsApp</button>
+</section>
+
+<section class="section">
+<h2>Why Choose Us</h2>
+<div class="cards">
+<div class="card"><h3>Fresh Ingredients</h3><p>Daily cooked meals</p></div>
+<div class="card"><h3>Affordable</h3><p>Budget friendly plans</p></div>
+<div class="card"><h3>Fast Delivery</h3><p>On time delivery</p></div>
+</div>
+</section>
+
+<section class="section gallery">
+<h2>Our Food</h2>
+<div class="cards">
+<img src="https://images.unsplash.com/photo-1625944525903-6f5a5d9c5c9c">
+<img src="https://images.unsplash.com/photo-1605478371310-a9f1e96b2a7d">
+<img src="https://images.unsplash.com/photo-1604908176997-4316a0e69d2c">
+</div>
+</section>
+
+<section class="section pricing">
+<h2>Our Plans</h2>
+<div class="cards">
+<div class="price-box"><h3>Basic</h3><p>₹2500/month</p></div>
+<div class="price-box"><h3>Standard</h3><p>₹3500/month</p></div>
+<div class="price-box"><h3>Premium</h3><p>₹5000/month</p></div>
+</div>
+</section>
+
+<section class="section">
+<h2>Contact</h2>
+<p>📞 9876543210</p>
+<p>📍 Your City</p>
+</section>
+
+<footer>
+<p>© 2026 Sharma Premium Tiffin</p>
+</footer>
+
+<a href="https://wa.me/919876543210" class="whatsapp">💬</a>
+
+<script>
+function orderNow(){
+window.open("https://wa.me/919876543210","_blank");
+}
+</script>
+
+</body>
+</html>
